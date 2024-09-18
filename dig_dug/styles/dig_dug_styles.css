@@ -3,6 +3,8 @@ main{
     border-width: 1px;
     border-color: black;
     margin: 0 auto;
+    width: 80vw;
+    background-color: #eccfc3;
 }
 h1 { 
     color:red;
@@ -23,7 +25,7 @@ blockquote {
     padding: 1rem;
     }
 body{
-    background-color: #eccfc3;
+    background-color: #5a405a;
     font-family: Arial, Helvetica, sans-serif
 }
 img.right{
@@ -43,4 +45,20 @@ a:link{
 }
 a:visited{
     color:#904C77
+}
+a:focus{
+    color:#ba2c86
+}
+a:hover{
+    color:#f6009c
+}
+a:active{
+    color: #ffc5ea
+}
+footer{
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    margin: 0 auto;
+    width: 80vw;
 }
