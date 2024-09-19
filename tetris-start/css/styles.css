@@ -1,0 +1,22 @@
+figure{
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+figure.img{
+    width: 100%;
+}
+
+header, footer, main{
+    margin: 0 auto;
+    width: 90vw;
+}
+
+#tetlist{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+div.tet{
+    flex: 0 1 450px
+}
