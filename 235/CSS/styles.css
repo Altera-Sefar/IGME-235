@@ -1,0 +1,63 @@
+body{
+    background-color: rgb(186, 67, 67);
+}
+h1{
+    color:rgb(239, 200, 9);
+    margin: 20px;
+}
+a:link{
+    color:rgb(239, 200, 9)
+}
+a:visited{
+    color:rgb(0, 0, 0)
+}
+a:focus{
+    color: rgb(250, 182, 93);
+}
+a:hover{
+    color: rgb(241, 239, 182)
+}
+a:active{
+    color: red
+}
+
+div.assignments{
+    background-color: rgb(240, 179, 179);
+    width:150px;
+    height:300px;
+    padding: 30px;
+    border: 6px solid rgb(0, 0, 0);
+    margin: 20px;
+    overflow: scroll;
+}
+#bio{
+    background-color: rgb(243, 117, 117);
+    width: 400px;
+    height:300px;
+    padding: 30px;
+    border: 6px solid rgb(239, 200, 9);
+    margin: 20px;
+}
+
+#Josh{
+    width: 225px;
+    height: 175px;
+}
+a.project{
+    color: rgb(255, 145, 0);
+}
+a.project:link{
+    color:rgb(255, 145, 0)
+}
+a.project:visited{
+    color:rgb(0, 0, 0)
+}
+a.project:focus{
+    color:rgb(255, 0, 0)
+}
+a.project:hover{
+    color:rgb(255, 255, 255)
+}
+a.project:active{
+    color:rgb(176, 122, 51)
+}
