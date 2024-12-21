@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Documentation Page</title>
+</head>
+
+<body>
+    <h1>Amiibo Quiz Documentation</h1>
+    <hr>
+    <h2>Process</h2>
+    <p>For my project 2, I ended up going with the Amiibo API and figuring out how I wanted to impliment quiz like
+        behavior. This was my priority before I did anything else. I ended up having two dropdown menus for the user to
+        select their guesses and a submit button to submit the response. I used the list of amiibos given to me by the
+        API to create values to select from the dropdowns, ensuring there were no repeats.</p>
+    <a href="https://stackoverflow.com/questions/9229645/remove-duplicate-values-from-js-array">Source for how I sorted
+        arrays. I used [new ... Set(array)]</a>
+    <p>A random amiibo is selected upon clicking the start, submit, reset, or skip buttons are pressed. The start button loads in the data from the API] Different
+        values on screen are updated depending on which button is pressed. If the values chosen
+        by the user matches the current amiibo (character and series), they get it right and increase their score.
+        Otherwise they lose a life. I've also given the user an option to disable the use of amiibo cards.</p>
+    <h2>Requirements Met/Grading (Self Grading based on Rubric)</h2>
+    <ul>
+        <li>API - Images of randomly chosen amiibo are selected for the user to guess - 10/10</li>
+        <li>Local Storage - The highest score of the user is stored in local storage and displayed to the user if a high
+            score exists when page is loaded. - 10/10</li>
+        <li>Controls - Submit, Restart, and Skip buttons as well as drop down selection. There is also a checkbox to
+            either include or exclude amiibo cards - 10/10</li>
+        <li>Error Free - No errors occur when running on my end - 10/10</li>
+        <li>Code - Stored externally, commented, and functions are used to reduce code - 4/4</li>
+        <li>HTML - Validates fine - 4/4</li>
+        <li>CSS - Validates fine - 4/4</li>
+        <li>Visual Design - The visual looks fine on the eyes, but there are definitely some design aspects which are
+            needed to make it a decent looking design (placement of elements, space usage, etc). The sizing of amiibo
+            images are wonky, as the original images are all different sizes and I needed a concrete size to ensure the rest of the
+            page looks fine/does not overlap with the image. - 5/8</li>
+        <li>Interaction Design - I would say interactive elements are visually clear to the user and are clear about
+            what they do. However, the dropdowns do present some accessibliity issues with having to scroll large lists.
+            I was unfortunately unable to determine how to create a typable dropdown to search for values in time for
+            submission without having to rework aspects of my project. - 6/8</li>
+        <li>Responseive Design - Website looks fine at 1024 x 768 resolution - 8/8</li>
+        <li>Checkpoint Deliverables - Both proposal and prototype were submitted on time - 8/8</li>
+        <li>Documentation - This page exists - 6/6</li>
+        <li>Score: 95/100</li>
+        <p>I would give myself closer to an A- for this project as I don't really like how the final design of this
+            project ended up looking as, there is a possible accessibiliy issue due to how long the the dropdowns are.
+        </p>
+    </ul>
+</body>
+
+</html>

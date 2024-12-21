@@ -1,0 +1,78 @@
+body{
+    background-color: rgb(86, 145, 125);
+    background-image: url("https://static.wixstatic.com/media/a078d7_15f1172adbc6430895af1bd8a129b4b5~mv2.png/v1/fill/w_980,h_850,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/a078d7_15f1172adbc6430895af1bd8a129b4b5~mv2.png");
+    background-size: 25%;
+}
+h1, h3{
+    font-family: 'Rye', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+h3{
+    font-size: 30px;
+}
+
+h1{
+    font-size: 45px;
+}
+
+#quoteSpace{
+    background-color: antiquewhite;
+    text-align: center;
+    border: solid black;
+    width: 50vw;
+    height: 1fr;
+    margin: auto;
+}
+button {
+    background-color: antiquewhite;
+    border: solid;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    font-family: 'Rye', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin: auto;
+    display: block;
+    font-size: 28px;
+    margin-bottom: 50px;
+}
+
+button:hover{
+    background-color: rgb(253, 217, 170);
+}
+button:active{
+    background-color: rgb(237, 154, 45);
+}
+p{
+    font-family: 'Rye', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    padding: 30px;
+}
+
+img{
+    position: relative;
+    display: block;
+    width: 75%;
+    height: 75%;
+    margin: auto;
+}
+
+@media screen and (max-width: 1000px) {
+    p{
+        font-family: 'Rye', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 45px;
+    }
+    h1{
+        font-size: 75px;
+    }
+    .button{
+        font-size: 30px;
+        padding: 0;
+    }
+    button{
+    width: 35vw;
+    height: 1fr;  
+    margin-bottom: 50px;
+    font-size: 40px;
+    }
+}

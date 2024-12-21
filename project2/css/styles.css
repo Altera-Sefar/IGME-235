@@ -1,0 +1,140 @@
+h1, h2, h3, select, label{
+  font-family: 'Chewy', Arial, Helvetica, sans-serif;;
+}
+
+body{
+    background-color: #fbf7cc;
+}
+#content {
+    display: grid;
+    grid-template-rows: 300px 350px 1fr 200px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+       "Explaination Explaination Explaination"
+        "Score Skips Lives"
+        ". Image ."
+        ". Selection ."
+}
+
+#intro{
+    grid-area: Explaination;
+    background-color: #ffd1d1;
+    width: 100vw;
+}
+
+#explaination{
+    font-size: 20px;
+    font-family: 'Akaya Kanadaka', Arial, Helvetica, sans-serif;
+    padding-left: 25vw;
+    padding-right: 25vw;
+}
+
+#title {
+    margin: 0;
+    padding: 0;
+    font-size: 72px;
+    text-align: center;
+}
+
+h2{
+    font-size: 32px;
+}
+
+h3{
+    font-size: 24px;
+}
+
+#gameInfo {
+    grid-area: Score;
+    text-align: center;
+}
+
+#skipInfo {
+    grid-area: Skips;
+    margin: auto;
+}
+
+#remaining{
+    text-align: center;
+}
+#currentCharacter {
+    grid-area: Image;
+    margin: auto;
+    width: 280px;
+    height: 300px;
+}
+
+#selection {
+    grid-area: Selection;
+    margin: auto;
+}
+
+#lives {
+    grid-area: Lives;
+    text-align: center;
+} 
+
+button{
+    background-color: #f5aa00; /* Green */
+    border: solid 5px black;
+    border-radius: 20px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    width: 150px;
+    display: block;
+    font-size: 16px;
+}
+
+button:hover{
+    background-color:#009682;
+}
+
+button:active{
+    background-color:#e62d8c;
+}
+
+#submit, #skip, #restart, #start{
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+select{
+    font-size: 16px;
+}
+
+@media screen and (max-width: 1300px){
+    #explaination{
+        font-size: 18px;
+    }
+    #content {
+        display: grid;
+        grid-template-rows: 300px 350px 1fr 200px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+           "Explaination Explaination Explaination"
+            "Score Skips Lives"
+            ". Image ."
+            ". Selection ."
+    }
+    
+}
+
+@media screen and (max-width: 600px){
+    #explaination{
+        font-size: 14px;
+    }
+    #content {
+        display: grid;
+        grid-template-rows: 300px 350px 1fr 200px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+           "Explaination Explaination Explaination"
+            "Score Skips Lives"
+            ". Image ."
+            ". Selection ."
+    }
+    
+}

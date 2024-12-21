@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+ 	<title>Zelda Character Finder</title>
+ 	<style>/* We have no style! */</style>
+  <script>
+  "use strict";
+	window.onload = init;
+	
+	function init(){
+		document.querySelector("#search").onclick = getData;
+	}
+	
+	function getData(){
+		// 1 - main entry point to web service
+		const SERVICE_URL = "https://zelda.fanapis.com/api/characters?name=";
+		
+		// No API Key required!
+		
+		// 2 - build up our URL string
+		// not necessary for this service endpoint
+		let url = SERVICE_URL;
+		
+		// 3 - parse the user entered term we wish to search
+		// not necessary for this service endpoint
+		let term = document.querySelector("#searchterm").value.trim();
+		term = encodeURIComponent(term);
+		url+=term;
+		
+		// 4 - update the UI
+		document.querySelector("#debug").innerHTML = `<b>Querying web service with:</b> <a href="${url}" target="_blank">${url}</a>`;
+		
+		// 5 - create a new XHR object
+		let xhr = new XMLHttpRequest();
+	
+
+		// 6 - set the onload handler
+		xhr.onload = dataLoaded;
+	
+		// 7 - set the onerror handler
+		xhr.onerror = dataError;
+
+		// 8 - open connection and send the request
+		xhr.open("GET",url);
+		xhr.send();
+	}
+	
+	function dataError(e){
+		console.log("An error occurred");
+	}
+	
+	function dataLoaded(e){
+		// 1 - e.target is the xhr object
+		let xhr = e.target;
+	
+		// 2 - xhr.responseText is the JSON file we just downloaded
+		console.log(xhr.responseText);
+	
+		// 3 - turn the text into a parsable JavaScript object
+		let obj = JSON.parse(xhr.responseText);
+		
+		// 4 - if there is an array of results, loop through them
+		let results = obj.data;
+        let bigString = "<p><i>Here are the results!</i></p>";
+		
+        for (let index = 0; index < results.length; index++) {
+            bigString += "<h2>" + results[index].name + "</h2>"
+            bigString += "<p>" + results[index].description + "</p>"
+        }
+		
+        
+
+		// 5 - display final results to user
+		document.querySelector("#content").innerHTML = bigString;
+    }
+  </script>
+
+</head>
+<body>
+<header>
+ <h1>Zelda Character Finder</h1>
+</header>
+
+<p>Search Term -&gt; <input id="searchterm" type="text" size="20" maxlength="20" autofocus value="mario" /></p>
+<p><button type="button" id="search" class="green">Search!</button></p>
+<p id="debug"></p>
+<hr>
+<h2>Results</h2>
+ <div id="content">
+ <p>No data yet!</p>
+ </div>
+ 
+</body>
+</html>
+

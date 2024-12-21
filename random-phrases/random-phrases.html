@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Zelda Quote Generator</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Rye&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <h1>Zelda Quote Generator</h1>
+        <h3>By Joshua Chisholm</h3>
+        <button type = "button">Generate</button>
+        <div id = "quote"><p id = "quoteSpace">Click the area above to generate a random quote from The Legend of Zelda series.</p></div>
+
+        <script>
+            'use strict'
+            window.onload = init;
+            let quoteArea = document.querySelector("button")
+            let quotes = [
+            "The flow of time is always cruel… Its speed seems different for each person, but no one can change it… A thing that doesn’t change with time is a memory of younger days.",
+            "I Want You To Live For The Future. There May Be Nothing Left For You… But Despite That, You Must Look Forward And Walk A Path Of Hope, Trusting That It Will Sustain You When Darkness Comes.",
+            "A Sword Wields No Strength Unless The Hand That Holds It Has Courage.",
+            "Your True Face... What Kind Of... Face Is It? I Wonder... The Face Under The Mask... Is That… Your True Face?",
+            "Do You Ever Feel A Strange Sadness As Dusk Falls? They Say It's The Only Time When Our World Intersects With Theirs... [...] That Is Why Loneliness Always Pervades The Hour Of Twilight.",
+            "It is something that grows over time... a true friendship. A feeling in the heart that becomes even stronger over time. The passion of friendship will soon blossom into a righteous power and through it, you will know which way to go...",
+            "Time passes, people move.... Like a river's flow, it never ends... A childish mind will turn to noble ambition... Young love will become deep affection... The clear water's surface reflects growth..."
+
+            ];
+
+            function selectPhrase(phrases = ["Hello", "Hi"])
+            {
+                return phrases[Math.floor(Math.random() * (phrases.length))]
+            }
+            quoteArea.onclick = function(e) {document.querySelector("#quoteSpace").innerHTML = selectPhrase(quotes)};
+            function init()
+            {
+                document.querySelector("#quoteSpace").innerHTML = selectPhrase(quotes);      
+            }
+        </script>
+    </body>
+</html>

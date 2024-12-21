@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Amiibo Quiz</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chewy&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Rye&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Chewy&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Rye&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/amiibo.js"></script>
+
+</head>
+
+<body>
+    <div id="content">
+        <div id="intro">
+            <header>
+                <h1 id="title">Amiibo Quiz</h1>
+            </header>
+            <p id="explaination">Welcome to the Amiibo Quiz! This is where you are able to test your knowledge of
+                Nintendo associated characters through guessing the character name and the series they are fron. You
+                must get both the character name and the series correct in order get it correct. You may skip a
+                character if you don't know the answer as long as you have skips remaining. Press start to begin!</p>
+        </div>
+        <h2 id="lives">0</h2>
+        <div id="gameInfo">
+            <h2 id="HighScore">0</h2>
+            <h2 id="score">0</h2>
+        </div>
+        <div id="skipInfo">
+            <h2 id = "gameProgress">Game: Not Started</h2>
+            <h2 id="remaining">0</h2>
+            <input type="checkbox" id="cards" name="card" value="include">
+            <label for = "cards">Exclude Amiibo Cards</label>
+            <button type="button" id="skip">Skip</button>
+            <button type="button" id="restart">Restart</button>
+        </div>
+        <div id="currentCharacter">
+            <button type = "button" id = "start">Start</button>
+        </div>
+        <div id="selection">
+            <h3>Character: </h3>
+            <select name="character" id="characters">
+                <option value="">Select</option>
+            </select>
+            <h3>Series: </h3>
+            <select name="game" id="series">
+                <option value="">Select</option>
+            </select>
+            <br>
+            <button type="button" id="submit">Submit</button>
+            <a href = "doc.html">Documentation/Self Grading</a>
+        </div>
+    </div>
+
+</body>
+
+</html>

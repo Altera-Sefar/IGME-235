@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Clyde's Revolution Documentation</title>
+</head>
+
+<body>
+    <h1>Clyde's Revolution Documentation</h1>
+    <hr>
+    <h2>I. Premise/Story</h2>
+    <p>The premise of Clyde's Revolution is that the player must defend his square workforce union from the
+        enemy tribe, Circles of the CEO</p>
+    <hr>
+    <h2>II. Gameplay</h2>
+    <p>The gameplay of Clyde's Revolution is similar to a tower defense game where the player can place
+        defensive structures for a cost in gold. Different structures have different functionality such as
+        shooting fast with weak bullets or slowly with string bullets, etc. My thoughts were to give players
+        options as to how they want to approach a battle. As enemy numbers rapidly increase as players
+        progress through levels. </p>
+    <hr>
+    <h2>III. Graphical Design</h2>
+    <p>Graphically, I just did not have time to find or create assets for this project, so I reworked my theme into a
+        battle
+        between squares and circles. So, I did my best to utilized shapes and colors to mimick UI and other game
+        details. If
+        I were to have more time, I would try to add custom assets (maybe keep the shape theme and make custom assets)
+    </p>
+    <hr>
+    <h2>IV. Processes</h2>
+    <p>For this project, I approached mechanics/ideas one thing at a time. First I incoorperated building selection and
+        a
+        working grid on pixi. I was having issues with getting object on click events working, so I removed the grid and
+        used text labels to spawn in buildings, but the players now have the ability to place buildings anywhere they
+        would
+        like. This was my biggest hurtle to get working, but after that, I would say implementing enemies, bullets,
+        building
+        costs/types, and updaing label were on the easier side of things.</p>
+        <hr>
+    <h2>Requirements Met - Final Code Submission</h2>
+    <ul>
+        <li>Included at least 1 E6 Class: Multiple class implemented, but the important ones are AttackBuilding, Enemy,
+            and Bullets Score: 10/10</li>
+        <li>Validation: HTML Validates Score: 10/10</li>
+        <li>Error Prevention: I restricted player input for what I expect in the gameplay loop. For some reason thought, upon loading the page, sometimes does not work. I don't know if this is a pixi problem or a me problem, but it goes away eventually by reloading the page Score: 5/10</li>
+        <li>Optimized Images: Nothing looks bad or too big. Score: 10/10</li>
+        <li>Documentation: This website exists Score: 10/10</li>
+        <li>Proposal on Time: My proposal was on time Score: 10/10</li>
+        <li>Prototype Available for Critique: My prototype was available to critique and I gave out critiques too Score:
+            20/20</li>
+        <li>Code Check: Nothing breaks when running Score: 10/10</li>
+        <li>Console is Clear: Console is mostly clear with audio file warnings. However, Score: 8/10</li>
+    </ul>
+    <p>Final Score: 93/100</p>
+    <h2>Requirements Met - Video Demo Link</h2>
+        <ul>
+        <li>Is it useful or entertaining: I would say my project can be interesting, but can get boring quickly Score: 13/15</li>
+        <li>Demonstrate Creativity: I would say going with the idea of tower defense it pretty unique, but not hightly creative.     Score: 8/10</li>
+        <li>Error-free: I restricted player input for what I expect in the gameplay loop. There are no errors IN GAME Score: 10/10</li>
+        <li>Visual Design: The design is basic, but not harsh on the eyes. I did not have the time to include images, which have improved the visual design. Score: 8/10</li>
+        <li>Sound: Sounds exists, but doesn't match the atmosphere in my opinion Score: 8/10</li>
+        <li>Interface: My interface is simple and easy to understand with everything being labeled. Score: 10/10</li>
+        <li>My project is distinct from the example/demo projects Score:
+            13/15</li>
+        <li>Code I had several usable classes and a money system to buy buildings. Not significant, but well Score: 8/10</li>
+        <li>Video Demo: I showed what I made and explained a challenge I overcame. 8/10</li>
+    </ul>
+    <p>Final Score: 88/100</p>
+
+    <p>Overall, I would say I did a pretty okay job for this project, but there are definitely things I can improve on.</p>
+    <hr>
+    <hr>
+    <hr>
+    <h1>Proposal</h1>
+    <h1>Title Pending</h1>
+    <h2>l. High Concept</h2>
+    <p>In order to save their kingdom, the player must defend their nation's border from enemy invaders.</p>
+    <hr>
+    <h2>ll. Genre</h2>
+    <p>Tower Defense/Real-Time Strategy</p>
+    <hr>
+    <h2>lll. Platform</h2>
+    <p>Desktop</p>
+    <hr>
+    <h2>lV. Story</h2>
+    <p>The story is that the player, the general of a nation, must defend the kingdom's border from enemy
+        nations
+        utilizing different resources at their disposal.
+    </p>
+    <hr>
+    <h2>V. Esthetics</h2>
+    <p>The graphics are most likely gonna be pixel art, with sound being 8-bit. I think I will only have sound
+        for
+        placing buildings and hitting enemies (more info in the next section). I think having sound effects for
+        shooting
+        may be too much if the player has a lot of buildings, but testing will determine that.
+    </p>
+    <hr>
+    <h2>VI. Mechanics</h2>
+    <p> For my mechanics, I intend for the player to be able to purchase different types of buildings to either
+        defend
+        or produce currency to obtain more buildings/defenses. Powerups or upgrades for buildings would be an
+        interesting idea, but would be a stretch goal. There would also be different kinds of enemies the player
+        could
+        face, which the player must strategize around. There is also the idea of spells the player can cast at
+        the cost
+        of mana (which I am deeming right now as a stretch goal)
+    </p>
+    <h3>Building Ideas</h3>
+    <ul>
+        <li>High Atk, Low Speed</li>
+        <li>Low Atk, High Speed</li>
+        <li>Gold Generator</li>
+        <li>Medium Atk, Medium Spd, but attacks closest target</li>
+        <li>Bombs/Bomb thrower</li>
+        <li>Barricade</li>
+    </ul>
+    <h3>Enemy Ideas</h3>
+    <ul>
+        <li>Melee Attacker</li>
+        <li>Ranged Attacker</li>
+        <li>Shielder (Multiple hits to remove shield and deal damage?)</li>
+        <li>Medium Atk, Medium Spd, but attacks closest target</li>
+        <li>Berserker (Very fast and very powerful, but lower health)</li>
+        <li>Healer?</li>
+    </ul>
+    <hr>
+    <h2>VII. Mockups</h2>
+    <img src="proj-3-proposal/images/titleScene.png" alt="Title screen" width="50%" height="50%">
+    <img src="proj-3-proposal/images/gameScene.png" alt="Game screen" width="50%" height="50%">
+    <hr>
+    <h2>VIII. Other</h2>
+    <p>Nothing other than that I plan to use PixiJS to do this project.
+    </p>
+    <hr>
+    <h2>IX. About the Developer</h2>
+    <ul>
+        <li>Name: Joshua Chisholm</li>
+        <li>Major: Game Design and Development</li>
+        <li>Year: 2nd Year</li>
+        </p>
+        <hr>
+</body>
+
+</html>
